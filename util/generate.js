@@ -11,7 +11,7 @@ const tag_replacements = [
                 <li><a href="mailto:nicolasquijano.daisytiles@gmail.com" class="icon style2 fa-paper-plane"><span class="label">Mail</span></a></li>
                 <li><a href="sms:4086144495&body=Daisy Tiles Inquisition: " class="icon style2 fa-comment-dots"><span class="label">Message</span></a></li>
             </ul>
-            <p>nicolas.quijano773@gmail.com</p>
+            <p>nicolasquijano.daisytiles@gmail.com</p>
             <p>+1 (408) 614-4495</p>
         </section>
 
