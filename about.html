@@ -1,121 +1,198 @@
 <!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html style="scroll-behavior: smooth;">
-	<head>
-		<title>Daisy Tiles - Get Started With Electronics and Programming</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-    <div class="inner">
+<head>
+	<title>Daisy Tiles - Get Started With Electronics and Programming</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 
-        <!-- Logo -->
-        <a href="index.html" class="logo">
-            <span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Daisy
-                Tiles</span>
-        </a>
+	<style>
+		.entry h2 {
+			text-align: center;
+			margin-bottom: 0px;
+		}
 
-        <!-- Nav -->
-        <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-            </ul>
-        </nav>
+		.entry h5 {
+			text-align: center;
+		}
 
-    </div>
-</header>
+		.headshot {
+			width: 100%;
+			max-width: 300px;
+			display: block;
+			margin: 0 auto;
+		}
 
-				<!-- Menu -->
-					<nav id="menu">
-<h2>Menu</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="purchase.html">Purchase</a></li>
-        <li><a href="software.html">Software</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
-</nav>
+		.entry {
+			display: flex;
+			gap: 20px;
+			align-items: flex-start;
+		}
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>About</h1>
-							<h3 style='font-family: "Courier New", monospace;'> <a href="#sDown">Our Team</a> <a href="#sWalk">Daisy Tiles</a> </h3>
-						
-							<h1> Our Team </h1>
-							<h2>Nicolas Quijano</h2>
-							<h5>Software and Hardware</h5>
-							<p> I'm Nicolas Quijano, a third year <i>Electrical and Computer Engineering</i> student at <b>CU Boulder</b>. I've always had
-								a passion for teaching people programming and hardware. When teaching younger students, I saw a large first step to
-								using an embedded systems. Not only does it often require learning the basics of programming, but also either OOP or advanced SDKs,
-								alongside with the basics of circuitry. 
-							</p>
+		.entry>div:first-child {
+			min-width: 220px;
+			max-width: 320px;
+			flex-shrink: 0;
+		}
 
-							<p>
-								This is why I created Daisy Tiles. It gets rid of the big first step by exposing a much simple, block-based programming system that
-								relies on programming-by-device as opposed to programming-by-port. This abstracts concepts such as GPIO configurations and the concept of
-								analog vs digital devices. Daisy tiles also features a simple plug-and-play tiled system, getting rid of any worries about resistors and
-								messy wires.
-							</p>
+		@media (max-width: 768px) {
+			.entry {
+				flex-direction: column;
+				align-items: center;
+			}
 
-							<p>
-								As a user gets more advanced, the IDE also exposes more complex programming concepts. This includes things like programming-by-port, bit manipulation,
-								and more.
-							</p>
+			.entry>div:first-child {
+				min-width: unset;
+				max-width: 100%;
+				width: 100%;
+			}
 
-							<h2>Andrew Enney</h2>
-							<h5>CAD and Physical Design</h5>
-						
-						
-						</div>
-					</div>
+			.entry>div:last-child {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
 
-				<!-- Footer -->
-		<footer id="footer" style="margin-top:0px">
-    <div class="inner">
-        <section>
-            <h2>Get in touch</h2>
-            <ul class="icons">
-                <li><a href="mailto:nicolasquijano.daisytiles@gmail.com" class="icon style2 fa-paper-plane"><span class="label">Mail</span></a></li>
-                <li><a href="sms:4086144495&body=Daisy Tiles Inquisition: " class="icon style2 fa-comment-dots"><span class="label">Message</span></a></li>
-            </ul>
-            <p>nicolasquijano.daisytiles@gmail.com</p>
-            <p>+1 (408) 614-4495</p>
-        </section>
+<body class="is-preload">
+	<div id="wrapper">
 
-        <section>
-            <h2>Follow</h2>
-            <ul class="icons">
-                <li><a href="https://github.com/FISHARMNIC" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="https://www.linkedin.com/in/nicolás-quijano-124657272" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            </ul>
-        </section>
-
-        <ul class="copyright">
-            <li>&copy; Nicolas Quijano. All rights reserved</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-    </div>
-</footer>
+		<header id="header">
+			<div class="inner">
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Daisy
+						Tiles</span>
+				</a>
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
 			</div>
+		</header>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="purchase.html">Purchase</a></li>
+				<li><a href="software.html">Software</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
 
-	</body>
+		<div id="main">
+			<div class="inner">
+				<h1>About</h1>
+				<h3 style='font-family: "Courier New", monospace;'>
+					<a href="#sTeam">Our Team</a> <a href="#sTiles">Daisy Tiles</a>
+				</h3>
+
+				<h1 id="sTeam">Our Team</h1>
+
+				<div class="entry">
+					<div>
+						<h2>Nicolas Quijano</h2>
+						<h5>Software & Hardware</h5>
+						<img src="images/headshot_nico.png" class="headshot">
+					</div>
+					<div>
+						<p>I'm Nicolas Quijano, a second year <i>Electrical and Computer Engineering</i> student at
+							<b>CU Boulder</b>. I've always had
+							a passion for teaching people programming and hardware. When teaching younger students, I
+							saw a large first step to using an embedded systems. Not only does it often require 
+							learning the basics of programming, but also either OOP or advanced SDKs, alongside 
+							with the basics of circuitry.
+						</p>
+						<p>
+							A lot of my work prior to Daisy Tiles has been in teaching the next generation about teaching programming
+							and circuitry. I've been a tutor, camp counselor, run 1-on-1 teaching sessions with kids ranged 
+							5-12 years old, and loved every moment of it. 
+						</p>
+						<p>
+							I'm also big into rock-climbing, compiler design, and low-level software. You can visit my personal website
+							<a href="https://nquijano.net">here</a>, and follow me on github <a href="https://github.com/FISHARMNIC">here</a>.
+						</p>
+					</div>
+				</div>
+
+				<br><br>
+
+				<div class="entry">
+					<div>
+						<h2>Andrew Enney</h2>
+						<h5>CAD & Physical Design</h5>
+						<img src="images/headshot_andrew.png" class="headshot">
+					</div>
+					<div>
+						<p>I'm Andrew Enney, a second year <i>Mechanical Engineering</i> student at <b>CU Boulder</b>
+							...
+						</p>
+						<p>
+							...
+						</p>
+						<p>
+							...
+						</p>
+					</div>
+				</div>
+
+				<br><br>
+				<h1 id="sTiles"> Daisy Tiles</h1>
+
+				<p>We created Daisy Tiles because we saw how big the first step to learning an embedded system is.
+					It gets rid of that by exposing a much simple, block-based programming system that
+					relies on programming-by-device as opposed to programming-by-port.
+					This abstracts concepts such as GPIO configurations and the concept of
+					analog vs digital devices. Daisy tiles also features a simple plug-and-play tiled system,
+					getting rid of any worries about resistors and messy wires.
+				</p>
+				<p>As a user gets more advanced, the IDE also exposes more complex programming concepts.
+					This includes things like programming-by-port, bit manipulation, and more.
+				</p>
+			</div>
+		</div>
+
+		<footer id="footer" style="margin-top:0px">
+			<div class="inner">
+				<section>
+					<h2>Get in touch</h2>
+					<ul class="icons">
+						<li><a href="mailto:nicolasquijano.daisytiles@gmail.com"
+								class="icon style2 fa-paper-plane"><span class="label">Mail</span></a></li>
+						<li><a href="sms:4086144495&body=Daisy Tiles Inquisition: "
+								class="icon style2 fa-comment-dots"><span class="label">Message</span></a></li>
+					</ul>
+					<p>nicolasquijano.daisytiles@gmail.com</p>
+					<p>+1 (408) 614-4495</p>
+				</section>
+				<section>
+					<h2>Follow</h2>
+					<ul class="icons">
+						<li><a href="https://github.com/FISHARMNIC" class="icon brands style2 fa-github"><span
+									class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/nicolás-quijano-124657272"
+								class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy; Nicolas Quijano. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
