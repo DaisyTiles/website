@@ -3188,7 +3188,7 @@ input, select, textarea {
 		background-color: #f6f6f6;
 
 		@media (prefers-color-scheme: dark) {
-    		background-color: #2c2c2c;
+    		background-color: #282828;
   		}
 
 	}
@@ -3357,3 +3357,4 @@ input, select, textarea {
 			}
 
 		}
+

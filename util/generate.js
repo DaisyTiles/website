@@ -5,9 +5,6 @@ const tag_replacements = [
         match: `footer`,
         replace_with: `<footer id="footer" style="margin-top:0px">
     <div class="inner">
-    <div style="width: 100%; margin-bottom: 2em;">
-        <hr>
-	</div>
         <section>
         
             <h2>Get in touch</h2>
