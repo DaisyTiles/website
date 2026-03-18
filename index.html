@@ -20,6 +20,42 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
 	<link rel="manifest" href="fav/site.webmanifest">
 
+	<style>
+@keyframes rippleOut {
+    0% {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+.tiles article {
+    position: relative;
+    overflow: visible;
+}
+
+.tiles article::before {
+    content: '';
+    position: absolute;
+    border-radius: 30px;
+    border: 2px solid #a8d8ea;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.tiles article:hover::before {
+    animation: rippleOut 1s ease-out 0s 1 forwards;
+}
+	</style>
+
 </head>
 
 <body class="is-preload">
@@ -28,34 +64,35 @@
 
 		<!-- Header -->
 		<header id="header">
-    <div class="inner">
+			<div class="inner">
 
-        <!-- Logo -->
-        <a href="index.html" class="logo">
-            <span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Daisy
-                Tiles</span>
-        </a>
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Daisy
+						Tiles</span>
+				</a>
 
-        <!-- Nav -->
-        <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-            </ul>
-        </nav>
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
 
-    </div>
-</header>
+			</div>
+		</header>
 
 		<!-- Menu -->
 		<nav id="menu">
-<h2>Menu</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="purchase.html">Purchase</a></li>
-        <li><a href="software.html">Software</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
-</nav>
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="purchase.html">Purchase</a></li>
+				<li><a href="software.html">Software</a></li>
+				<li><a href="walkthrough.html">Walkthroughs</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
 
 		<!-- Main -->
 		<div id="main">
@@ -89,7 +126,7 @@
 
 				</div>
 
-				<br><br><br>
+				<br>
 
 
 
@@ -242,32 +279,46 @@
 
 		<!-- Footer -->
 		<footer id="footer" style="margin-top:0px">
-    <div class="inner">
-        <section>
-        
-            <h2>Get in touch</h2>
-            <ul class="icons">
-                <li><a href="mailto:nicolasquijano.daisytiles@gmail.com" class="icon style2 fa-paper-plane"><span class="label">Mail</span></a></li>
-                <li><a href="sms:4086144495&body=Daisy Tiles Inquisition: " class="icon style2 fa-comment-dots"><span class="label">Message</span></a></li>
-            </ul>
-            <p>nicolasquijano.daisytiles@gmail.com</p>
-            <p>+1 (408) 614-4495</p>
-        </section>
+			<div class="inner">
+				<section>
 
-        <section>
-            <h2>Follow</h2>
-            <ul class="icons">
-                <li><a href="https://github.com/FISHARMNIC" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="https://www.linkedin.com/in/nicolás-quijano-124657272" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            </ul>
-        </section>
+					<h2>Get in touch</h2>
+					<ul class="icons">
+						<li><a href="mailto:nicolasquijano.daisytiles@gmail.com"
+								class="icon style2 fa-paper-plane"><span class="label">Mail</span></a></li>
+						<li><a href="sms:4086144495&body=Daisy Tiles Inquisition: "
+								class="icon style2 fa-comment-dots"><span class="label">Message</span></a></li>
+					</ul>
+					<p>nicolasquijano.daisytiles@gmail.com</p>
+					<p>+1 (408) 614-4495</p>
+				</section>
 
-        <ul class="copyright">
-            <li>&copy; Nicolas Quijano. All rights reserved</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-    </div>
-</footer>
+				<section>
+					<h2>Follow</h2>
+					<ul class="icons">
+						<li><a href="https://github.com/FISHARMNIC" class="icon brands style2 fa-github"><span
+									class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/nicolás-quijano-124657272"
+								class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</section>
+
+
+				<ul class="copyright" style="margin-top: 20px;">
+					<li>&copy; Nicolas Quijano. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+
+				<ul class="copyright" style="text-align: center; margin-top: 60px;" id="floor">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="purchase.html">Purchase</a></li>
+					<li><a href="software.html">Software</a></li>
+					<li><a href="walkthrough.html">Walkthroughs</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+
+			</div>
+		</footer>
 	</div>
 
 	<!-- Scripts -->

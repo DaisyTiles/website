@@ -191,3 +191,15 @@
 // 	flash_el.src = `images/flash-${flash_toggle ? 'red' : 'blue'}.png`;
 // 	flash_toggle = !flash_toggle;
 // }, 1000)
+
+
+document.querySelectorAll('a:not([href^="#"]):not([href^="mailto"]):not([href^="sms"])').forEach(link => {
+    link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (!href || href.startsWith('http')) return;
+        e.preventDefault();
+        document.body.style.transition = 'opacity 0.3s ease';
+        document.body.style.opacity = '0';
+        setTimeout(() => window.location.href = href, 400);
+    });
+});

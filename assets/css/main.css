@@ -2607,9 +2607,9 @@ input, select, textarea {
 				position: relative;
 				display: block;
 				width: 100%;
-				border-radius: 4px;
+				/* border-radius: 4px; */
 				overflow: hidden;
-				border-radius: 10px !important;
+				border-radius: 30px !important;
 			}
 
 				.tiles article > .image img {
@@ -3350,11 +3350,25 @@ input, select, textarea {
 		padding: 0em 3.5em;
 	}	
 
-		@media screen and (max-width: 736px) {
 
-			#wrapper > * > .inner {
-				padding: 0 1.25em;
-			}
+@media screen and (max-width: 736px) {
 
-		}
+	#wrapper > * > .inner {
+		padding: 0 1.25em;
+	}
 
+}
+
+body {
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* 
+a {
+    transition: opacity 0.2s ease;
+} */
