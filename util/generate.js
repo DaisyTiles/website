@@ -5,7 +5,11 @@ const tag_replacements = [
         match: `footer`,
         replace_with: `<footer id="footer" style="margin-top:0px">
     <div class="inner">
+    <div style="width: 100%; margin-bottom: 2em;">
+        <hr>
+	</div>
         <section>
+        
             <h2>Get in touch</h2>
             <ul class="icons">
                 <li><a href="mailto:nicolasquijano.daisytiles@gmail.com" class="icon style2 fa-paper-plane"><span class="label">Mail</span></a></li>
